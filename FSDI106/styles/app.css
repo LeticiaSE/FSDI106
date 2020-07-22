@@ -1,0 +1,80 @@
+body {
+
+    background-color: #e7e7e8;
+    margin: 0;
+  }
+  
+  h3 {
+    margin-top: 0;
+    background-image: url(/styles/bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #7B92A6;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0;
+    font-family: 'Segoe UI';
+  }
+  
+  .form {
+    padding: 30px;
+    width: 350px;
+    border: 1px solid #3f8ebd;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fcfcfc;
+    box-shadow: 0 0 6px #333;
+  }
+  
+  #txtToDo {
+    font-size: 20px;
+    font-family: "Gill Sans";
+    padding: 5px 10px;
+  }
+  
+  #btnAdd {
+    font-size: 20px;
+    font-family: "Gill Sans";
+    padding: 5px 10px;
+    padding: 5px 30px;
+    background-color: #9BB9BF;
+    border-radius: 8px;
+    border: 1px solid #9BB9BF;
+
+  }
+  
+  h5 {
+      font-size: 25px;
+      font-family: 'Segoe UI';
+      margin-left: 50px;
+      margin-bottom: 10px;
+      color: #333;
+  }
+  
+  
+  .list {
+      margin: 0 30px;
+  }
+  
+  .list li {
+      list-style: none;
+      margin-bottom: 7px;
+      padding: 7px 10px;
+      border: 1px solid #3f8ebd;
+      border-radius: 3px;
+      background: #fcfcfc;
+      font-size: 18px;
+      color:#333;
+      font-family: sans-serif;
+  }
+  
+  .list li:hover {
+      box-shadow: 0 0 6px #66bbec;
+      padding: 10px 10px;
+      border-left-width: 7px;
+      padding-left: 7px;
+      cursor: pointer;
+  }
+  
+
