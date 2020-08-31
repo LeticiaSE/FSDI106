@@ -1,53 +1,86 @@
-h2{
-    background-image: url(/book.jpeg);
-    background-repeat: none;
-    color: rgba(56, 56, 155, 0.959);
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    color: #672D44;
     height: 100%;
     width: 100%;
     text-align: center;
     padding: 60px;
 }
 
-.item{
-    background-color: rgb(242, 247, 246);
-    border: 1px solid green;
+h2:hover {
+    color: #000000;
+}
+
+h5 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.item {
+    background-color: #fce6f6;
+    border: 1px solid #000000;
     border-radius: 4px;
     padding: 40px;
     margin-bottom: 15px;
     margin-right: 20px;
     width: 270px;
-    height: 370px;
+    height: 390px;
     display: inline-block;
     vertical-align: top;
+    text-align: center;
 }
 
-.item img{
+.item img {
     height: 230px;
+    width: 200px;
 }
 
-.code{
+.code {
     display: block;
     color: black;
     font-size: 14px;
     margin-bottom: auto;
 }
 
-.info{
+.info {
     text-align: left;
 }
 
-.title{
+.title {
     font-weight: bold;
     font-size: 14px;
     display: block;
 }
 
-.price{
+.price {
     font-size: 18px;
     font-weight: bold;
     color: rgb(5, 138, 138);
 }
 
-button{
-    float: left;
+button {
+    float: right;
+
+}
+
+/* ==========================================================================
+    #WRAPPER +
+========================================================================== */
+.wrapper {
+    margin: 0 auto;
+}
+
+.wrapper--w780 {
+    max-width: 980px;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+}
+
+.bg-gra-01 {
+    background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #C2A0DC 100%);
+    background: -moz-linear-gradient(bottom, #fbc2eb 0%, #672D44 100%);
+    background: -o-linear-gradient(bottom, #fbc2eb 0%, #000000 100%);
+    background: linear-gradient(to top, #fbc2eb 0%, #E8B7E6 100%);
 }

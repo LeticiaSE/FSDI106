@@ -1,3 +1,191 @@
-container{
-    border: 1px solid black;
+/* ==========================================================================
+   #FONT+
+========================================================================== */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-balsamiq {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+/* ==========================================================================
+     #PAGE WRAPPER+
+========================================================================== */
+.page-wrapper {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1,h2 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* ==========================================================================
+     #BACKGROUND+
+========================================================================== */
+.bg-gra-01 {
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+}
+
+/* ==========================================================================
+     #SPACING+
+========================================================================== */
+.p-t-180 {
+  padding-top: 180px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+/* ==========================================================================
+     #WRAPPER +
+========================================================================== */
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper--w780 {
+  max-width: 980px;
+}
+
+/* ==========================================================================
+     #BUTTON+
+========================================================================== */
+.btn {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 33px;
+  font-family: 'Balsamiq Sans', cursive;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn--radius {
+  border-radius: 3px;
+}
+
+.btn--pill {
+  border-radius: 20px;
+}
+
+.btn--green {
+  background: #4b83dd;
+}
+
+.btn--green:hover {
+  background: #4575c2;
+}
+
+/* ==========================================================================
+     #FORM+
+========================================================================== */
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 33px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input--style-3 {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #ccc;
+  background: transparent;
+}
+
+/* ==========================================================================
+     #TITLE+
+========================================================================== */
+.title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+
+/* ==========================================================================
+     #CARD+
+========================================================================== */
+.card {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.card-3 {
+  background: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: table;
+}
+
+.card-3 .card-heading {
+  background: url("../bg-heading.jpeg") top left/cover no-repeat;
+  display: table-cell;
+  width: 50%;
+}
+
+.card-3 .card-body {
+  padding: 57px 65px;
+  padding-bottom: 65px;
+  display: table-cell;
+}
+
+@media (max-width: 767px) {
+  .card-3 {
+    display: block;
+  }
+
+  .card-3 .card-heading {
+    display: block;
+    width: 100%;
+    padding-top: 400px;
+    background-position: center center;
+  }
+
+  .card-3 .card-body {
+    display: block;
+    width: 100%;
+    padding: 37px 30px;
+    padding-bottom: 45px;
+  }
 }

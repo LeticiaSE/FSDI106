@@ -9,18 +9,16 @@
         PUT: update some existing elements
         PATCH: update part of an existing element
         DELETE: remove an existing element
-
 */
 
 //Object Constructor for Item
-function Item(code,title,price,category,image) {
+function Item(code, title, price, category, image) {
     this.code = code;
     this.title = title;
     this.price = price;
     this.category = category;
     this.image = image;
     this.user = 'Lety';
-    
 }
 
 function register() {
@@ -30,7 +28,7 @@ function register() {
     var category = $("#txtCategory").val();
     var image = $("#txtImage").val();
 
-    var item = new Item(code,title,price,category,image);
+    var item = new Item(code, title, price, category, image);
     console.log(item);
     console.log(JSON.stringify(item));
 
@@ -40,15 +38,24 @@ function register() {
     $.ajax({
         url: 'http://restclass.azurewebsites.net/api/points',
         type: 'POST',
-        data: JSON.stringify(item),//specify the object
+        data: JSON.stringify(item), //specify the object
         contentType: 'application/json',
-        success: function(response) {
-            console.log("Yeei", response);
+        success: function (response) {
+            console.log("Yes", response);
         },
-        error: function(errorDetails) {
-            console.log("Ouuch.!",errorDetails);
+        error: function (errorDetails) {
+            console.log("No!", errorDetails);
         }
     });
+    clearForm();
+}
+
+function clearForm() {
+    $("#txtCode").val("");
+    $("#txtTitle").val("");
+    $("#txtPrice").val("");
+    $("#txtCategory").val("");
+    $("#txtImage").val("");
 }
 
 function init() {
@@ -57,6 +64,4 @@ function init() {
     //load data
 }
 
-
 window.onload = init;
-
